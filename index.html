@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MK Produtos Digitais</title>
-<meta name="description" content="Planilhas e kits de Inteligência Artificial prontos para facilitar sua rotina e o seu negócio. Acesso imediato.">
+<meta name="description" content="Ebooks, planilhas e kits de Inteligência Artificial prontos para facilitar sua rotina, suas finanças e o seu negócio. Acesso imediato.">
 <meta property="og:title" content="MK Produtos Digitais">
 <meta property="og:description" content="Soluções digitais prontas para facilitar sua rotina. Organização hoje, conquistas amanhã.">
 <meta property="og:image" content="logo.jpg">
@@ -108,7 +108,9 @@ document.addEventListener('click', function (e) {
   .head p { color: var(--muted); margin-top: 14px; }
 
   /* products */
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; max-width: 920px; margin-inline: auto; }
+  .thumb { position: relative; }
+  .badge-new { position: absolute; top: 16px; left: 16px; z-index: 1; background: #D6483A; color: #fff; font-weight: 800; font-size: .72rem; letter-spacing: .14em; padding: 6px 12px; border-radius: 999px; box-shadow: 0 6px 16px rgba(0,0,0,.35); }
   .card {
     display: flex; flex-direction: column;
     background: linear-gradient(180deg, var(--card), #061C15);
@@ -217,7 +219,7 @@ document.addEventListener('click', function (e) {
       <div>
         <span class="eyebrow">MK Produtos Digitais</span>
         <h1 class="serif">Organização hoje. <span class="gold">Conquistas amanhã.</span></h1>
-        <p class="lead">Planilhas e kits de Inteligência Artificial prontos para usar. Menos tempo pensando no que fazer e mais tempo fazendo.</p>
+        <p class="lead">Ebooks, planilhas e kits de Inteligência Artificial prontos para usar. Menos tempo pensando no que fazer e mais tempo fazendo.</p>
         <div class="ctas">
           <a href="#produtos" class="btn">Conhecer os produtos</a>
           <a href="https://www.instagram.com/mkprodutosdigitais.oficial/" target="_blank" rel="noopener" class="btn ghost">Seguir no Instagram</a>
@@ -243,6 +245,26 @@ document.addEventListener('click', function (e) {
       </div>
 
       <div class="grid">
+        <article class="card">
+          <div class="thumb"><span class="badge-new">NOVO</span><img src="ebook.jpg" alt="Ebook Saia do Vermelho com IA"></div>
+          <div class="body">
+            <span class="tag">Sair das dívidas</span>
+            <h3>Saia do Vermelho com IA</h3>
+            <p>O plano de 90 dias para organizar, negociar e quitar suas dívidas usando o ChatGPT.</p>
+            <ul>
+              <li>Descubra quanto deve, para quem e com qual juro</li>
+              <li>Saiba qual dívida pagar primeiro</li>
+              <li>4 mensagens prontas para negociar com bancos</li>
+              <li>12 prompts de IA para organizar suas finanças</li>
+              <li>Plano semana a semana com checklist</li>
+            </ul>
+            <div class="buy">
+              <div class="price"><small>Ebook em PDF</small><strong>R$ 27</strong></div>
+              <a href="https://pay.kiwify.com.br/3kHfH4a" target="_blank" rel="noopener" class="btn sm">Quero sair do vermelho</a>
+            </div>
+          </div>
+        </article>
+
         <article class="card">
           <div class="thumb"><img src="mkia.jpg" alt="Kit MK IA Vendas 24/7 com 7 materiais em PDF"></div>
           <div class="body">
