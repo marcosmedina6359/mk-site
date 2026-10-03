@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MK Produtos Digitais</title>
-<meta name="description" content="Ebooks, planilhas e kits de Inteligência Artificial prontos para facilitar sua rotina, suas finanças e o seu negócio. Acesso imediato.">
+<meta name="description" content="Livros infantis para imprimir a partir de R$ 7,90, ebooks, planilhas e kits de IA. Compre pela Kiwify. Edições em português, inglês e espanhol.">
 <meta property="og:title" content="MK Produtos Digitais">
 <meta property="og:description" content="Soluções digitais prontas para facilitar sua rotina. Organização hoje, conquistas amanhã.">
 <meta property="og:image" content="logo.jpg">
@@ -19,7 +19,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2170284290561545');
 fbq('track', 'PageView');
 document.addEventListener('click', function (e) {
-  var a = e.target.closest('a[href*="pay.kiwify.com.br"]');
+  var a = e.target.closest('a[href^="https://pay.kiwify.com/"] , a[href^="https://pay.kiwify.com.br/"]');
   if (a) fbq('track', 'InitiateCheckout', { content_name: a.closest('.card') ? a.closest('.card').querySelector('h3').textContent : '' });
 });
 </script>
@@ -194,6 +194,21 @@ document.addEventListener('click', function (e) {
     .steps { grid-template-columns: 1fr; }
     .nav .btn { display: none; }
   }
+
+  #familia, #edicoes { scroll-margin-top: 88px; }
+  .family-feature { display:grid; grid-template-columns:minmax(220px,.8fr) 1.2fr; max-width:920px; margin:auto; }
+  .family-feature>img { width:100%; height:100%; object-fit:contain; background:#fff9ee; }
+  .family-feature .body { padding:32px; }
+  .family-feature h3 { font-family:Georgia,serif; font-size:2rem; }
+  .sample-link { text-decoration:underline; color:var(--gold-2); }
+  .edition-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:920px; margin:32px auto 0; }
+  .family-note { max-width:920px; margin:24px auto; color:var(--muted); font-size:.86rem; }
+  .collection { max-width:920px; margin:32px auto 0; }
+  .family-grid { padding:20px; }
+  .thumb.book { aspect-ratio:1/1; background:#fff; }
+  .thumb.book img { object-fit:contain; }
+  .notice { font-size:.8rem!important; }
+  @media(max-width:700px) { .family-feature,.edition-grid { grid-template-columns:1fr; } .family-feature>img { max-height:440px; } .family-feature .body { padding:24px; } .family-feature .buy { flex-wrap:wrap; } .edition-grid .buy { flex-wrap:wrap; } }
 </style>
 </head>
 <body>
@@ -205,7 +220,7 @@ document.addEventListener('click', function (e) {
       <span>MK<small>PRODUTOS DIGITAIS</small></span>
     </a>
     <ul>
-      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#familia">Livros infantis</a></li><li><a href="#produtos">Outros produtos</a></li>
       <li><a href="#como-funciona">Como funciona</a></li>
       <li><a href="#faq">Dúvidas</a></li>
     </ul>
@@ -219,9 +234,9 @@ document.addEventListener('click', function (e) {
       <div>
         <span class="eyebrow">MK Produtos Digitais</span>
         <h1 class="serif">Organização hoje. <span class="gold">Conquistas amanhã.</span></h1>
-        <p class="lead">Ebooks, planilhas e kits de Inteligência Artificial prontos para usar. Menos tempo pensando no que fazer e mais tempo fazendo.</p>
+        <p class="lead">Livros para brincar em família, ebooks, planilhas e kits de Inteligência Artificial. Materiais digitais para imprimir, organizar e criar.</p>
         <div class="ctas">
-          <a href="#produtos" class="btn">Conhecer os produtos</a>
+          <a href="#familia" class="btn">Livros infantis · R$ 7,90</a>
           <a href="https://www.instagram.com/mkprodutosdigitais.oficial/" target="_blank" rel="noopener" class="btn ghost">Seguir no Instagram</a>
         </div>
         <div class="perks">
@@ -236,6 +251,13 @@ document.addEventListener('click', function (e) {
     </div>
   </div>
 
+<section id="familia" class="alt"><div class="wrap"><div class="head"><span class="eyebrow">Novo · Tempo juntos</span><h2 class="serif">Um desenho, muitas histórias em família.</h2><p>Livros e brincadeiras para baixar, imprimir e aproveitar com as crianças.</p><p><a href="#edicoes">Português · English · Español ↓</a></p></div>
+<div class="family-feature card"><img src="familia/colorir-pt.png" alt="Nosso Tempo de Colorir: avós e netos desenhando juntos" width="602" height="850"><div class="body"><span class="tag">Avós e netos · 3 a 6 anos</span><h3>Nosso Tempo de Colorir</h3><p>Escolham um bichinho, peguem os lápis e deixem a conversa acontecer. Um livro para transformar a visita em um momento para guardar.</p><ul><li>20 desenhos de bichinhos</li><li>27 páginas, com perguntas para conversar</li><li>Páginas para desenhar e registrar lembranças</li><li>PDF em português para imprimir em casa</li></ul><div class="buy"><span class="price"><small>Pagamento único</small><strong>R$ 7,90</strong></span><a class="btn" href="https://pay.kiwify.com.br/reDot5z">Quero colorir juntos</a></div><p><a class="sample-link" href="familia/amostra-colorir.pdf" target="_blank" rel="noopener">Ver amostra grátis: 3 desenhos (PDF)</a></p><p class="notice">Produto digital para uso pessoal e familiar. Não inclui livro físico, impressão ou lápis. Acesso pela Kiwify após a confirmação do pagamento.</p></div></div>
+<div id="edicoes" class="edition-grid">
+<article class="card" lang="en"><div class="body"><span class="tag">English edition · Ages 3–6</span><h3>Our Coloring Time</h3><p>A little coloring. A lot of time together. 27 pages with 20 animal drawings, conversation prompts and keepsake pages for grandparents and grandchildren.</p><ul><li>English PDFs in A4 and US Letter</li><li>Print at home and enjoy with a grown-up</li><li>Digital download; no physical book or supplies</li></ul><div class="buy"><span class="price"><small>One-time payment</small><strong>US$ 5.00</strong></span><a class="btn sm" href="https://pay.kiwify.com/YtLI44Q">Get English PDF</a></div></div></article>
+<article class="card" lang="es"><div class="body"><span class="tag">Edición en español · De 3 a 6 años</span><h3>Nuestro Tiempo para Colorear</h3><p>Un dibujo, muchas historias juntos. 27 páginas con 20 dibujos de animalitos, preguntas para conversar y espacios para guardar recuerdos entre abuelos y nietos.</p><ul><li>PDF en español, en tamaños A4 y Carta</li><li>Para imprimir y disfrutar con un adulto</li><li>Producto digital; sin libro físico ni materiales</li></ul><div class="buy"><span class="price"><small>Pago único</small><strong>US$ 5.00</strong></span><a class="btn sm" href="https://pay.kiwify.com/yKft9eT">Comprar PDF español</a></div></div></article></div>
+<p class="family-note">Cada idioma é vendido separadamente. Each language is sold separately. Cada idioma se vende por separado.</p>
+<details class="collection"><summary>Mais 9 brincadeiras em português — R$ 7,90 cada</summary><div class="grid family-grid"><article class="card"><div class="thumb book"><img src="familia/01-memoria.png" loading="lazy" alt="Capa de Memória dos Bichinhos"></div><div class="body"><span class="tag">PDF em português · 4 a 7 anos</span><h3>Memória dos Bichinhos</h3><p>Pinte, recorte e encontre os pares.</p><ul><li>20 pares • 40 cartões</li><li>9 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/PqjQLKF" aria-label="Comprar Memória dos Bichinhos">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/02-bingo.png" loading="lazy" alt="Capa de Bingo dos Bichinhos"></div><div class="body"><span class="tag">PDF em português · 4 a 8 anos</span><h3>Bingo dos Bichinhos</h3><p>Um jogo para reunir a família.</p><ul><li>8 cartelas diferentes • 16 fichas de sorteio</li><li>13 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/UJTjbkT" aria-label="Comprar Bingo dos Bichinhos">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/03-labirintos.png" loading="lazy" alt="Capa de Caminhos de Aventura"></div><div class="body"><span class="tag">PDF em português · 5 a 8 anos</span><h3>Caminhos de Aventura</h3><p>Encontre a saída com seu lápis.</p><ul><li>12 labirintos • soluções incluídas</li><li>18 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/sK4EtT9" aria-label="Comprar Caminhos de Aventura">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/04-caca-formas.png" loading="lazy" alt="Capa de Caça às Formas em Família"></div><div class="body"><span class="tag">PDF em português · 4 a 7 anos</span><h3>Caça às Formas em Família</h3><p>Observe, encontre e pinte.</p><ul><li>12 desafios • respostas para conferir</li><li>16 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/O5FyPNV" aria-label="Comprar Caça às Formas em Família">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/05-tracos.png" loading="lazy" alt="Capa de Tracinhos e Caminhos"></div><div class="body"><span class="tag">PDF em português · 4 a 6 anos</span><h3>Tracinhos e Caminhos</h3><p>Uma brincadeira com linhas e movimentos.</p><ul><li>12 páginas de traçados e desenho livre</li><li>15 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/4zcM9JR" aria-label="Comprar Tracinhos e Caminhos">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/06-numeros.png" loading="lazy" alt="Capa de Contar e Brincar"></div><div class="body"><span class="tag">PDF em português · 4 a 6 anos</span><h3>Contar e Brincar</h3><p>Descobertas com os números de 1 a 10.</p><ul><li>10 números • 3 jogos • respostas</li><li>17 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/c9YHBJh" aria-label="Comprar Contar e Brincar">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/07-letras.png" loading="lazy" alt="Capa de Brincando com as Letras"></div><div class="body"><span class="tag">PDF em português · 5 a 7 anos</span><h3>Brincando com as Letras</h3><p>Um encontro com o alfabeto.</p><ul><li>26 letras • procurar, copiar e desenhar</li><li>29 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/y7UdsLL" aria-label="Comprar Brincando com as Letras">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/08-viagem.png" loading="lazy" alt="Capa de Vamos Viajar Juntos"></div><div class="body"><span class="tag">PDF em português · 5 a 8 anos</span><h3>Vamos Viajar Juntos</h3><p>Brincadeiras para passeios e momentos de espera.</p><ul><li>12 atividades • soluções incluídas</li><li>16 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/UCauixd" aria-label="Comprar Vamos Viajar Juntos">Comprar PDF</a></div></div></article><article class="card"><div class="thumb book"><img src="familia/09-memorias.png" loading="lazy" alt="Capa de Nossas Pequenas Grandes Memórias"></div><div class="body"><span class="tag">PDF em português · 4 a 9 anos</span><h3>Nossas Pequenas Grandes Memórias</h3><p>Um álbum para avós e netos completarem juntos.</p><ul><li>16 páginas de lembranças e conversas</li><li>19 páginas para imprimir em A4</li><li>Com acompanhamento de um adulto</li></ul><div class="buy"><span class="price"><small>Compra individual</small><strong>R$ 7,90</strong></span><a class="btn sm" href="https://pay.kiwify.com.br/Ppn6jRx" aria-label="Comprar Nossas Pequenas Grandes Memórias">Comprar PDF</a></div></div></article></div></details><p class="family-note">Atividades com acompanhamento de um adulto. Recortes devem ser feitos pelo adulto. Impressão e materiais não incluídos. Ilustrações criadas com auxílio de IA. A MK não oferece atendimento por WhatsApp.</p></div></section>
   <section id="produtos">
     <div class="wrap">
       <div class="head">
@@ -386,6 +408,8 @@ document.addEventListener('click', function (e) {
       <div class="faq">
         <details><summary>Como recebo o produto?</summary><p>Logo após a confirmação do pagamento, você recebe o acesso por e-mail e na área de membros da Kiwify.</p></details>
         <details><summary>Quais formas de pagamento são aceitas?</summary><p>O pagamento é processado pela Kiwify. As formas disponíveis aparecem na página de checkout.</p></details>
+        <details><summary>Os livros infantis são físicos?</summary><p>Não. Você compra arquivos PDF para baixar e imprimir. Papel, impressão e lápis não estão incluídos. Os PDFs infantis são para uso pessoal e familiar.</p></details>
+        <details><summary>Como escolho o idioma do livro?</summary><p>Use o botão da edição desejada: português, inglês ou espanhol. As versões em inglês e espanhol incluem A4 e Carta e custam US$ 5,00 cada. O país escolhido no checkout pode alterar os campos e o idioma da página de pagamento, mas não muda o idioma do arquivo comprado.</p></details>
         <details><summary>Preciso saber usar Inteligência Artificial?</summary><p>Não. Os kits de IA trazem os comandos prontos. Você só copia, troca as informações entre [colchetes] e cola no ChatGPT ou Claude.</p></details>
         <details><summary>Preciso pagar o ChatGPT?</summary><p>Não necessariamente. Os prompts de texto funcionam nas versões gratuitas.</p></details>
         <details><summary>A planilha funciona no celular?</summary><p>Sim. Ela foi feita para Excel e também pode ser aberta no celular.</p></details>
